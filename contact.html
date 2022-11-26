@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+    <link rel="Stylesheet" href="style.css">
+</head>
+<body>
+    <header class="primary-header flex">
+        <div class="primary-header">
+            <img src="/album/picwish.png">
+        </div>
+
+        <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false"></button>
+
+        <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                <li class="active">
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li class="active">
+                    <a href="store.html">Store</a>
+                </li>
+
+                <li class="active">
+                    <a href="about.html">About</a>
+                </li>
+
+                <li class="active">
+                    <a href="contact.html" class="atm">Contact</a>
+                </li>
+
+                <li class="active">
+                    <a href="references.html">References</a>
+                </li>
+
+                <li class="active">
+                    <a class="bag" href="bag.html"></a> 
+                 </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="contact">
+  
+        <h1 class="section-header">Contact Down Below</h1>
+        
+        <div class="contact-wrapper">
+        
+        <!-- Left contact page --> 
+          
+          <form id="contact-form" class="form-horizontal" role="form">
+             
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-12">
+                  <input type="text" class="form-control" id="lastname" placeholder="LASTNAME" name="lastname" value="" required>
+                </div>
+              </div>
+      
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-12">
+                  <input type="text" class="form-control" id="phone" placeholder="PHONE" name="phone" value="" required>
+                </div>
+              </div>
+      
+            <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+            
+            <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+              <div class="alt-send-button">
+                <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+              </div>
+            
+            </button>
+            
+          </form>
+          
+        <!-- Left contact page --> 
+          
+            <div class="direct-contact-container">
+              
+              <img src="/album/Building.jpg">
+              <ul class="contact-list">
+                <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Stockholm, Sweden</span></i></li>
+                
+                <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">08-555-321</a></span></i></li>
+                
+                <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">ArcticTeam@gmail.com</a></span></i></li>
+                
+              </ul>
+      
+              <hr>
+              <ul class="social-media-list">
+                <li class="instagram"><a href="#" target="_blank" class="contact-icon">
+                  <i aria-hidden="true"></i></a>
+                </li>
+                <li class="facebook"><a href="#" target="_blank" class="contact-icon">
+                  <i aria-hidden="true"></i></a>
+                </li>
+                <li class="twitter"><a href="#" target="_blank" class="contact-icon">
+                  <i aria-hidden="true"></i></a>
+                </li>
+                <li class="github"><a href="#" target="_blank" class="contact-icon">
+                  <i aria-hidden="true"></i></a>
+                </li>       
+              </ul>
+              <hr>
+      
+              <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+      
+            </div>
+          
+        </div>
+        
+      </section>  
+        
+        
+
+    <footer class="footer">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="atm">Contact</a></li>
+            <li><a href="references.html">References</a></li>
+        </ul>
+        <div class="footer-content"><button onclick='window.scrollTo({top: 0, behavior: "smooth"});' class="about-arrow2"></button>
+            <div class="footer-content">
+                <img src="/album/picwish.png">
+            </div>
+            <p>© 2014–2022 Arctic. All rights reserved. Terms of Use Privacy Policy</p>
+        </div>
+        <div class="footer-content">
+            <div class="rating-stars" data-stars="4-half">
+            <h4>Overall conversion quality rating 4.9</h4>
+            <i class="star"><img src="/album/star.png"></i>
+            <i class="star"><img src="/album/star.png"></i>
+            <i class="star"><img src="/album/star.png"></i>
+            <i class="star"><img src="/album/star.png"></i>
+            <i class="star"><img src="/album/star.png"></i>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

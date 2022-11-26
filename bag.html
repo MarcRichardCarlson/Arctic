@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+    <link rel="Stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="primary-header flex">
+        <div class="primary-header">
+            <img src="/album/picwish.png">
+        </div>
+
+        <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false"></button>
+
+        <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                <li class="active">
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li class="active">
+                    <a href="store.html">Store</a>
+                </li>
+
+                <li class="active">
+                    <a href="about.html">About</a>
+                </li>
+
+                <li class="active">
+                    <a href="contact.html">Contact</a>
+                </li>
+
+                <li class="active">
+                    <a href="references.html">References</a>
+                </li>
+
+                <li class="active">
+                    <a class="bag" href="bag.html" class="atm"></a> 
+                 </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="cart-selection">
+        <div class="bag-top">Your Cart</div>
+        <div class="bag-bottom"></div>        
+    </div>
+
+    <footer class="footer">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="references.html">References</a></li>
+        </ul>
+        <div class="footer-content"><button onclick='window.scrollTo({top: 0, behavior: "smooth"});' class="about-arrow2"></button>
+            <div class="footer-content">
+                <img src="/album/picwish.png">
+            </div>
+            <p>© 2014–2022 Arctic. All rights reserved. Terms of Use Privacy Policy</p>
+        </div>
+        <div class="footer-content">
+            <div class="rating-stars" data-stars="4-half">
+            <h4>Overall conversion quality rating 4.9</h4>
+            <i class="star"><img src="/album/star.png"></i>
+            <i class="star"><img src="/album/star.png"></i>
+            <i class="star"><img src="/album/star.png"></i>
+            <i class="star"><img src="/album/star.png"></i>
+            <i class="star"><img src="/album/star.png"></i>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
