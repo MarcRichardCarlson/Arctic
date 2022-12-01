@@ -233,7 +233,6 @@ html {
     text-align: center;
     box-shadow: 0 15px 30px 1px rgb(0, 0, 0);
     background: rgba(255, 255, 255, 0.9);
-    text-align: center;
     border-radius: 5px;
     overflow: hidden;
     margin: 5em auto;
@@ -250,7 +249,7 @@ html {
 
 .product-details {
     padding: 2rem;
-    width: 70%;
+    width: 80%;
 }
 
 #container .product-details > p {
@@ -269,6 +268,7 @@ html {
 
     .product-details {
         width: 60%;
+        padding: 0.5rem;
     }
 
     .product-details h1 {
@@ -607,24 +607,6 @@ html {
     background-image: url(/album/about.jpg);
 }
 
-@media (max-width: 35em) {
-    .about-img {
-        height: 25rem;
-    }
-}
-
-.about-img h1 {
-    display: flex;
-    font-size: 4rem;
-    color: #eee;
-}
-
-@media (max-width: 35em) {
-    .about-img h1 {
-        font-size: 2rem;
-    }
-}
-
 .about-content {
     display: flex;
     justify-content: space-around;
@@ -646,30 +628,63 @@ html {
     box-shadow: 1rem 2rem 10rem rgb(0, 0, 0);
 }
 
+@media (max-width: 35em) { 
+    .about-content-text {
+        width: 100%;
+        padding: 0;
+    }
+
+    .about-content-text img {
+        display: none;
+    }
+
+    #about-content-text2 img {
+        display: none;
+    }
+
+    .about-img {
+        height: 25rem;
+    }
+
+    .about-content p {
+        padding: 1rem;
+    }
+
+    .about-content h2 {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .about-img h1 {
+        font-size: 2rem;
+    }
+
+}
+
 .about-content-text img {
     width: 70%;
     height: 320px;
     border-radius: 5px;
 }
 
-.about-content-text2 {
+#about-content-text2 {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     float: right;
-    width: 80%;
+    width: 100%;
     height: 20rem;
-    padding: 1rem;
-    margin-top: 3rem;
+    padding: 0.5rem;
+    margin-top: 2rem;
     margin-bottom: 8rem;
     background-color: rgba(0, 0, 0, 0.586);
     box-shadow: 1rem 2rem 10rem rgb(0, 0, 0);
 }
 
-.about-content-text2 img {
+#about-content-text2 img {
     float: right;
-    width: 20%;
+    width: 15%;
     height: 180px;
     border-radius: 5px;
 }
@@ -807,8 +822,16 @@ html {
 }
 
 /*LEFT*/
+.contact-form {
+    width: 25%;
+    background-color: rgba(38, 59, 74, 0.182);
+    padding: 3rem;
+    border-radius: 5px;
+    margin-left: 10rem;
+}
+
 .form-horizontal {
-    max-width: 500px;
+    max-width: 50%;
     font-family: "Lato";
     font-weight: 400;
     margin-left: 15rem;
@@ -816,35 +839,28 @@ html {
 
 .form-control,
 textarea {
-    width: 90%;
+    width: 100%;
     height: 2rem;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     letter-spacing: 1px;
     border-radius: 5px;
-    margin: 1rem;
+    margin-bottom: 1rem;
 }
 
 .send-button {
-    display: flex;
     margin-top: 15px;
+    padding: 1rem;
     height: 60px;
-    width: 400px;
+    width: 100%;
     overflow: hidden;
     transition: all 0.2s ease-in-out;
 }
 
 .alt-send-button {
-    width: 300px;
+    width: 200px;
     height: 34px;
     transition: all 0.2s ease-in-out;
-}
-
-.send-text {
-    display: block;
-    margin-top: 10px;
-    font: 700 12px "Lato", sans-serif;
-    letter-spacing: 2px;
 }
 
 .alt-send-button:hover {
@@ -854,6 +870,8 @@ textarea {
 /* RIGHT */
 .direct-contact-container {
     max-width: 400px;
+    margin-right: 20rem;
+    background-color: rgba(38, 59, 74, 0.182);
 }
 
 .direct-contact-container img {
@@ -902,6 +920,17 @@ textarea {
 }
 
 @media (max-width: 35em) {
+
+    .contact-form {
+        width: 100%;
+        padding: 0;
+        margin-left: 0;
+    }
+
+    .direct-contact-container {
+        margin-right: 0;
+    }
+
     .form-horizontal {
         margin-left: 0;
     }
@@ -911,8 +940,8 @@ textarea {
         justify-content: center;
         margin-top: 15px;
         height: 30px;
-        width: 200px;
-        margin-left: 6rem;
+        width: 100%;
+        padding: 0.3rem;
     }
 
     .form-control,
@@ -1024,6 +1053,123 @@ hr {
         display: flex;
         width: 50%;
         justify-content: center;
+    }
+}
+
+/*REFERENCE ----------------------------------------------------------------------------*/
+
+.customer-content2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.231);
+    box-shadow: 0 15px 30px 1px rgb(69, 69, 69);
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.customer-img2 {
+    width: 30%;
+    height: 500px;
+    background-image: url(/album/pexels-tiffany-bui-2405062.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.customer-img3 {
+    width: 30%;
+    height: 500px;
+    background-image: url(/album/pexels-volker-meyer-3800412.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.customer-header2 {
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+}
+
+.reference-text {
+    display: inline-block;
+    padding-top: 1rem;
+    width: 50%;
+    text-align: center;
+}
+
+.reference-text2 {
+    display: inline-block;
+    padding-top: 2rem;
+    width: 50%;
+    text-align: center;
+}
+
+.reference-text3 {
+    padding-top: 2rem;
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+}
+
+@media (max-width: 83em) {
+    .reference-text {
+        width: 70%;
+    }
+
+    .reference-text2 {
+        padding-top: 1rem;
+        width: 70%;
+    }
+
+    .reference-text3 {
+        padding-top: 1rem;
+        width: 70%;
+    }
+}
+
+@media (max-width: 45em) {
+    .reference-text {
+        padding-top: 0.5rem;
+        width: 90%;
+    }
+
+    .reference-text2 {
+        padding-top: 0.5rem;
+        width: 90%;
+    }
+
+    .reference-text3 {
+        padding-top: 0.5rem;
+        width: 90%;
+    }
+}
+
+@media (max-width: 35em) {
+    .reference-content {
+        margin-top: 4rem;
+    }
+
+    .reference-img {
+        display: none;
+    }
+
+    .reference-text {
+        padding-top: 0.5rem;
+    }
+
+    .reference-text2 {
+        padding-top: 0.5rem;
+    }
+
+    .reference-text3 {
+        padding-top: 0.5rem;
+    }
+
+    .customer-header2 h2{
+        margin: 0;
     }
 }
 
