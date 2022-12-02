@@ -107,11 +107,7 @@ html {
         transition: transform 250ms ease-out;
     }
 
-    /*Gör navbaren synlig om true via js*/
-    .primary-navigation[data-visible="true"] {
-        transform: translateX(0%);
-    }
-
+    
     .nav-toggle {
         display: block;
         position: absolute;
@@ -128,6 +124,11 @@ html {
         aspect-ratio: 1 / 1;
         top: 2rem;
         right: 2rem;
+    }
+    
+    /*Gör navbaren synlig om true via js*/
+    .primary-navigation[data-visible="true"] {
+        transform: translateX(0%);
     }
 
     /*Byter icon om aria-expanded = true*/
